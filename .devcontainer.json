@@ -1,0 +1,4 @@
+{
+  "image": "rust:1.86-bullseye",
+  "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}"
+}
