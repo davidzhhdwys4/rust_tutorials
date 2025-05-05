@@ -1,4 +1,11 @@
 {
   "image": "rust:1.86-bullseye",
-  "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}"
+  "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": ["rust-lang.rust-analyzer"]
+    }
+  }
 }
